@@ -136,7 +136,5 @@ if 'DATABASE_URL' in os.environ:
     import dj_database_url
     DATABASES = {'default': dj_database_url.config()}
 
-admin.site.site_header = 'CraftTechSolution  Admin Panel'
-admin.site.site_title = 'CraftTechSolution Admin Panel'
 
 ADMINS = (('Denis Kiprono', 'deniskiprono4@gmail.com'),)
