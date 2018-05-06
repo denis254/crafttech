@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}
+
+CraftTechSolution - Website Optimazation
+
+{% endblock %}
+
+{% block header %}
+
+{% include "header.html" %}
+
+{% endblock %}
+
+{% block content %}
+
+<img src="{% static "images/ContactUs.jpg"  %}" alt="My image"  />
+<p>
+Feel free to talk to our online representative at any time you please using our Live Chat system on our website or one of
+ the below instant messaging programs.
+</p>
+<p>
+Please Feel Free to contact this number while waiting for response. (24/7 Support!) Phone General Inquiries:  +254 702 290 881
+</p>
+<h2 align = "center">Tell Us About Your Project
+</h2>
+
+<p>
+
+If you are planning to start a project and considering a possibility to assign it to our company, please fill out the form
+ and we will either send you our proposal by email or contact you by phone. The more detailed the information we get, the better
+  requirement analysis will be carried out by our specialists.
+</p>
+
+
+
+<div align = "center">
+
+<form method="post" >
+  {% csrf_token %}
+  {% for field in enquire %}
+ <p>
+   <div style="color:blue">{{ field.label_tag }}</div>
+
+   {{ field }}
+ </p>
+{% endfor %}
+
+  <button id = "back" type="submit">Submit </button>
+</form>
+</div>
+
+{% endblock %}
+
+{% block footer %}
+
+  {% include "contactus.html" %}
+
+{% endblock %}

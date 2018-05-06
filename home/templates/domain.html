@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}
+
+CraftTechSolution - Website Optimazation
+
+{% endblock %}
+
+{% block header %}
+
+{% include "header.html" %}
+
+{% endblock %}
+
+{% block content %}
+
+<img src="{% static "images/smo-banner.png"  %}" alt="My image"  />
+
+<h1 style="color:red" align = "center">Domain </h1>
+
+<p>
+  We provide our clients with desired domain name for free
+</p>
+<p>
+  Fill in the <font style="color:blue"><a href="/contact/">Form</a></font> and one of our representetives will get back to you in a short while
+</p>
+
+{% endblock %}
+
+{% block footer %}
+
+  {% include "contactus.html" %}
+
+{% endblock %}

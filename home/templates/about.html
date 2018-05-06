@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}
+
+CraftTechSolution - Website Optimazation
+
+{% endblock %}
+
+{% block header %}
+
+{% include "header.html" %}
+
+{% endblock %}
+
+{% block content %}
+
+<img src="{% static "images/small-business-web-design-brisbane-1.png"  %}" alt="My image"  />
+
+<h2 align = "center">Craft Tech Solution Company Profile</h2>
+
+<div class="w3-row-padding">
+  <div class="w3-third">
+<p>
+  Craft Tech Solution Ltd provides digital business solution that makes it unique in the industry. With our belief that the
+   internet media should be linked to core marketing practices, we help companies to seamlessly integrate websites to their
+    core business thereby realizing their objectives. Focusing on the three most important business growth aspects: reaching
+     your prospects, customer conversion and customer retention, we work to continuously provide "complete website solution" to
+      our satisfied clients.
+</p>
+</div>
+
+<div class="w3-third">
+<p>
+
+We have been providing a wide range of web services from Nairobi, Kenya which includes Website design and development, Web
+ and Intranet application, Internet Marketing and many other business consulting solutions. Whether it is Internet security,
+  e-commerce, CRM, or full-scale portal, web-based and database driven systems development, we can help you with your next project
+   and IT outsourcing needs.
+</p>
+</div>
+
+<div class="w3-third">
+<p>
+Craft Tech Solution Ltd partners with all our clients to ensure that our best solutions meets their objectives and goals.
+</p>
+</div>
+</div>
+
+
+{% endblock %}
+
+{% block footer %}
+
+  {% include "contactus.html" %}
+
+{% endblock %}
