@@ -1,1 +1,1 @@
-web: gunicorn crafttechsolution.wsgi --log-file -
+web: gunicorn denis.wsgi --log-file -
