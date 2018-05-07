@@ -25,7 +25,7 @@ SECRET_KEY = '$-&96q%+#_w=a*l)^8skjhnku#s&66hrnd)1-78h)ay98s'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['crafttechsolution.herokuapp.com','www.crafttechsolution']
+ALLOWED_HOSTS = ['crafttechsolution.herokuapp.com','www.crafttechsolution.com']
 
 
 # Application definition
