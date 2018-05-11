@@ -15,6 +15,10 @@ class about(TemplateView):
 
     template_name = "about.html"
 
+class careers(TemplateView):
+
+    template_name = "careers.html"
+
 class webdesign(TemplateView):
 
     template_name = "webdesign.html"

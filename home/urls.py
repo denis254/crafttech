@@ -12,6 +12,7 @@ urlpatterns = [
     path('webhost/', views.webhost.as_view()),
     path('domain/', views.domain.as_view()),
     path('about/', views.about.as_view()),
+    path('careers/', views.careers.as_view()),
     path('contactcomplete/', views.contactcomplete.as_view()),
     path('contact/', views.contact, name = "contactus"),
     path('consultancy/', views.consultancyt.as_view())
