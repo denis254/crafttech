@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block navbar %}
+{% include "navbar.html" %}
+{% endblock %}
+
+{% block slideshow %}
+{% include "slideshow.html" %}
+{% endblock %}
+
+{% block content %}
+<div class="w3-row-padding">
+  <div class="w3-third">
+    <br><br>
+  <img style="width:400px; height:350px" src="{% static "images/021805110508iosandroidappdevelopmetnbanner1.jpg"  %}" alt="My image"  />
+  </div>
+  <div class="w3-third" >
+    <h2> Custom Mobile App Development</h2>
+<p>Mobile app development services have become mainstream with mobile penetrating in all aspects of day-to-day life.
+   We at CraftTechSolution have been delighting clients by providing custom mobile app development services that excel
+    at features and design alike. Started off as a research project almost a decade back our mobility department
+     has come a long way. The mobile engineering department is full of highly accomplished and professionally
+      trained mobile app developers that guarantee quality and usability. Be it native or hybrid apps we use
+       the latest platforms, agile development model and research backed project execution workflows to build
+        your apps so that you can get the maximum return on your investment. Having built more than 500 apps
+         our experienced team has worked with diverse domains ranging from education to social
+     media and healthcare. When you build your project with us you certainly stand to gain and are at an advantage.
+   </p>
+  </div>
+  <div class="w3-third">
+    <h2>Advantages With Us</h2>
+    <p><font style="color:blue"><b>1. </b></font> Huge saving of time and money with no compromise on quality </p>
+    <p><font style="color:blue"><b>2. </b></font>Premium Quality Apps designed to meet your requirements </p>
+    <p><font style="color:blue"><b>3. </b></font>Technical ability and infrastructure to cater to almost all types of mobile apps</p>
+    <p><font style="color:blue"><b>4. </b></font>Rich Mobile User experience developed over the years of implementation</p>
+    <p><font style="color:blue"><b>5. </b></font>Innovative mobile app development web services that generate entirely new business models and user experiences for all</p>
+    <p><font style="color:blue"><b>6. </b></font>Mobility Solutions that emphasizes business transformation and speed to market</p>
+    <p><font style="color:blue"><b>7. </b></font>Upgrade apps with the changing platforms to gain maximum functionality and features</p>
+  </div>
+</div>
+{% endblock %}
+{% block footer %}
+{% include "footer.html" %}
+{% endblock %}

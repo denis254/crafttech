@@ -4,52 +4,29 @@ from django.contrib import messages
 
 from . forms import contactusForm
 
-# Create your views here.
-from django.views.generic import TemplateView
+def home(request):
+    return render(request, "home.html")
 
-class home(TemplateView):
+def blog(request):
+    return render(request, "blog.html")
 
-    template_name = "homepage.html"
+def contactcomplete(request):
+    return render(request, "contactcomplete.html")
 
-class about(TemplateView):
+def mobilesolutions(request):
+    return render(request, "mobilesolutions.html")
 
-    template_name = "about.html"
+def websolutions(request):
+    return render(request, "websolutions.html")
 
-class careers(TemplateView):
+def payment(request):
+    return render(request, "payment.html")
 
-    template_name = "careers.html"
+def services(request):
+    return render(request, "services.html")
 
-class webdesign(TemplateView):
-
-    template_name = "webdesign.html"
-
-class seo(TemplateView):
-
-    template_name = "seo.html"
-
-class smo(TemplateView):
-
-    template_name = "smo.html"
-
-class webhost(TemplateView):
-
-    template_name = "webhost.html"
-
-class domain(TemplateView):
-
-    template_name = "domain.html"
-
-class contact(TemplateView):
-
-    template_name = "contact.html"
-
-class contactcomplete(TemplateView):
-
-    template_name = "contactcomplete.html"
-
-class consultancyt(TemplateView):
-
-    template_name = "consultancy.html"
+def about(request):
+    return render(request, "about.html")
 
 def contact(request):
 
@@ -69,6 +46,5 @@ def contact(request):
 
     else:
         enquire = contactusForm()
-
 
     return render(request, 'contact.html', {'enquire':enquire})

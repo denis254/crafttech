@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block navbar %}
+{% include "navbar.html" %}
+{% endblock %}
+
+{% block slideshow %}
+{% include "slideshow.html" %}
+{% endblock %}
+
+{% block content %}
+<br>
+<h2 align = "center">CraftTechSolution Services</h2>
+<br>
+<div class="w3-row-padding" align = "center">
+  <div class="w3-third">
+  <img src="{% static "images/images.png"  %}" alt="My image"  />
+<h4>Mobile Solutions <br> (Apps)</h4>
+<p>We develop Mobile Apps for all platforms.Our apps cuts accross all sectors of economy.
+  Need an app developed to solve a problem for your organisation?
+</p>
+<a href="/mobile_solutions/">
+<button type="submit" class="btn button4 button3" >View details >></button></a>
+</div>
+<div class="w3-third">
+  <img src="{% static "images/web.png"  %}" alt="My image"  />
+<h4>Web Solutions & Websites</h4>
+<p>We deliver modern web portals for managing content users, view reports and other admin functions.
+  We also develop dynamic social & responsive websites for small, medium and corporate clients.
+</p>
+<a href="/web_solutions/">
+<button type="submit" class="btn button4 button3" >View details >></button></a>
+</div>
+<div class="w3-third">
+  <img src="{% static "images/payment.png"  %}" alt="My image"  />
+<h4>Payment Solutions</h4>
+<p>We support Customer to Business (C2B) and Business to Customer (B2C) payment integrations.
+   We have successfully delivered MPesa API integration to clients and we always ensure that
+    you receive real time MPesa payments.
+  </p>
+  <a href="/payment/">
+  <button type="submit" class="btn button4 button3" >View details >></button></a>
+</div>
+</div>
+<br>
+<h2 align = "center">Why Choose Us</h2>
+<div class="w3-row-padding" align = "center">
+  <div class="w3-third">
+    <h4>Over 3 Years Experience</h4>
+    <p>Craft Tech Solution brings you the benefit of over 3 years experience.
+      We know exactly what is required, and when it needs to be done.
+      We observe the latest market trends and give you the best up-to-date solution.
+    </p>
+  </div>
+  <div class="w3-third">
+    <h4>SEO-friendly Websites</h4>
+    <p>We help you make money because of our professionally designed websites that are search-engine optimised
+       (SEO-friendly).
+     </p>
+   </div>
+   <div class="w3-third">
+     <h4>Very Competitive Rates</h4>
+     <p>The best part is we deliver high quality work at very highly favourable prices.
+       Contact us by our live chat system and you will find that prices are truly affordable
+     </p>
+   </div>
+ </div>
+{% endblock %}
+{% block footer %}
+{% include "footer.html" %}
+{% endblock %}

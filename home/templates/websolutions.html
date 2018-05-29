@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block navbar %}
+{% include "navbar.html" %}
+{% endblock %}
+
+{% block slideshow %}
+{% include "slideshow.html" %}
+{% endblock %}
+
+{% block content %}
+<div class="w3-row-padding" align = "center" >
+  <h2 align = "center">Web Solutions & Websites</h2>
+  <div class="w3-third">
+<img style="width:200px; height:200px" src="{% static "images/web-development-banner.png"  %}" alt="My image"  />
+<p>Craft Tech Solution is a web design and digital marketing company in Nairobi.
+  We specialize in designing custom, responsive websites to enhance your web presence
+   and represent your company effectively online. Our comprehensive website designing,
+   search engine optimization and social media marketing services are focusing on helping
+    each business attain their marketing objectives through a strong web presence that engages
+     their target audience.</p>
+  </div>
+  <div class="w3-third">
+  <img style="width:200px; height:200px" src="{% static "images/web-development.jpg"  %}" alt="My image"  />
+<p>Whether we are providing web design, or SEO, our capable team of professionals is committed
+  to helping your business succeed. We have developed the most effective strategies for improving
+   customer conversion rates, click through rates, and ensuring customer retention. We offer a full
+    suite of services to help every client obtain their business goals including web hosting, domain,
+     social media optimization, pay per click, and SEO.
+   </p>
+  </div>
+  <div class="w3-third">
+<img style="width:200px; height:200px" src="{% static "images/images.jpeg"  %}" alt="My image"  />
+<p>Our talented and professional web designers have assisted clients across the world.
+   We offer integrated web design or redesign services that will help you put your best face forward.
+    Whether you own a website and are seeking an increase in visibility and sales or you need standard
+     SEO or web design services for your organization, we can provide the cutting edge services you need.
+   </p>
+  </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+{% include "footer.html" %}
+{% endblock %}

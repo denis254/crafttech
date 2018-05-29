@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+{% block navbar %}
+
+<div class="w3-bar  w3-blue w3-padding-16 w3-large">
+  <a href="/home/" class="w3-bar-item w3-button"><b>
+    <font style="color:yellow">Craft</font><font style="color:white">TechSolution</font></b></a>
+    <a href="/contact/"style="float:right" class="w3-bar-item w3-button w3-hide-small">Contact Us</a>
+    <a href="/blog/" style="float:right" class="w3-bar-item w3-button w3-hide-small">Blog</a>
+    <a href="/about/" style="float:right" class="w3-bar-item w3-button w3-hide-small">About</a>
+    <a href="/services/" style="float:right" class="w3-bar-item w3-button w3-hide-small">Services</a>
+    <a href="/home/" style="float:right" class="w3-bar-item w3-button w3-hide-small">Home</a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div id="demo" class="w3-bar-block w3-blue w3-hide w3-hide-large w3-hide-medium">
+  <a href="/home/" class="w3-bar-item w3-button">Home</a>
+  <a href="/services/" class="w3-bar-item w3-button">Services</a>
+  <a href="/about/" class="w3-bar-item w3-button">About</a>
+  <a href="/blog/" class="w3-bar-item w3-button">Blog</a>
+  <a href="/contact/" class="w3-bar-item w3-button">Contact Us</a>
+</div>
+
+
+{% endblock %}

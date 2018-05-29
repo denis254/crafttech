@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block navbar %}
+{% include "navbar.html" %}
+{% endblock %}
+
+{% block slideshow %}
+{% include "slideshow.html" %}
+{% endblock %}
+
+{% block content %}
+<br>
+<h2 align = "center">CraftTechSolution Services</h2>
+<br>
+<div class="w3-row-padding" align = "center">
+  <div class="w3-third">
+  <img src="{% static "images/images.png"  %}" alt="My image"  />
+<h4>Mobile Solutions <br> (Apps)</h4>
+<p>We develop Mobile Apps for all platforms.Our apps cuts accross all sectors of economy.
+  Need an app developed to solve a problem for your organisation?
+</p>
+<a href="/mobile_solutions/">
+<button type="submit" class="btn button4 button3" >View details >></button></a>
+</div>
+<div class="w3-third">
+  <img src="{% static "images/web.png"  %}" alt="My image"  />
+<h4>Web Solutions & Websites</h4>
+<p>We deliver modern web portals for managing content users, view reports and other admin functions.
+  We also develop dynamic social & responsive websites for small, medium and corporate clients.
+</p>
+<a href="/web_solutions/">
+<button type="submit" class="btn button4 button3" >View details >></button></a>
+</div>
+<div class="w3-third">
+  <img src="{% static "images/payment.png"  %}" alt="My image"  />
+<h4>Payment Solutions</h4>
+<p>We support Customer to Business (C2B) and Business to Customer (B2C) payment integrations.
+   We have successfully delivered MPesa API integration to clients and we always ensure that
+    you receive real time MPesa payments.
+  </p>
+  <a href="/payment/">
+  <button type="submit" class="btn button4 button3" >View details >></button></a>
+</div>
+</div>
+<br>
+{% endblock %}
+
+{% block footer %}
+{% include "footer.html" %}
+{% endblock %}

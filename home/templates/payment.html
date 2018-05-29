@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block navbar %}
+{% include "navbar.html" %}
+{% endblock %}
+
+{% block slideshow %}
+{% include "slideshow.html" %}
+{% endblock %}
+
+{% block content %}
+<br>
+<div align = "center"><img src="{% static "images/payment.png"  %}" alt="My image"  /></div>
+<p style="margin:50px">
+We support Customer to Business (C2B) and Business to Customer (B2C) payment integrations.
+We have successfully delivered MPesa API integration to clients and we always ensure that you
+ receive real time MPesa payments from your web and mobile application. We also provide other
+  payment integration solutions like airtel money, orange money for mobile money category,
+   third-party integrations for solutions like pesapal, jambopay, paypal and kopokopo and
+    also direct integrations like visa and mastercard.
+</p>
+{% endblock %}
+
+{% block footer %}
+{% include "footer.html" %}
+{% endblock %}

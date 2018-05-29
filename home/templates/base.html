@@ -1,160 +1,21 @@
-{% load static %}
-
-<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
-
 <!DOCTYPE html>
+
+{% load staticfiles %}
 
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118968730-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <title> {% block title %}  {% endblock %} </title>
 
-  gtag('config', 'UA-118968730-2');
-</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-  <meta charset="utf-8">
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="Leading web app development company based in Nairobi, Kenya. We develop agile, solid
- and effective enterprise web apps for corporates. Contact us today. CraftTechSolution App Developers portfolio, Meet our
-  dedicated team offering mobile app solutions, web hosting &amp; domains, web apps and more. Visit our portfolio Now,CraftTechSolution
-   Products developed and managed internally. Review and choose a product that suits your services. We offer 24/7 technical support.
-    Contact us Today! CraftTechSolution Mobile Solution/App Developers in Nairobi, Kenya. CraftTechSolution uses the right technology to deliver the right
-     solutions per requirements. Enjoy our services">
-<meta name='keywords' content='CraftTechSolution, Web and Mobile App design Nairobi, Kenyan App Developers, web hosting company' />
-<meta title="title" content="Leading Web Application Development Company | CraftTechSolution, Kenya Our products | CraftTechSolution Technologies,
- CraftTechSolution Products, CraftTechSolution Internal Products">
-<meta title="title" content="About us | Kenya Web App Developers Team | CraftTechSolution, East Africa">
-<meta title="title" content="Kenya Web Application Development Company | CraftTechSolution, East Africa">
-<meta name="author" content=" CraftTechSolution, Kenya">
-
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Leading Web Application Development Company | CraftTechSolution, Kenya ">
-<meta name="twitter:description" content="Leading web app development company based in Nairobi, Kenya. We develop agile, solid
- and effective enterprise web apps for corporates. Contact us today. Best App Development, hosting, domains,
-  web design &amp; development services in Kenya. Talk us!">
-<meta name="twitter:domain" content="crafttechsolution.com">
-<meta name="twitter:site" content="@crafttechsolution" />
-
-<meta property="og:url" content="http://crafttechsolution.com/" />
-<meta property="og:type" content="website">
-<meta property="og:title" content="crafttechsolution.com" />
-<meta property="og:description" content="Leading web app development company based in Nairobi, Kenya.
- We develop agile, solid and effective enterprise apps for corporates. Contact us today." />
-
-
-
-<style>
-body {margin: 0;}
-
-ul.topnav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #0000CD;
-}
-
-ul.topnav li {
-  float: left;
-  margin-top: 5px;
-  padding-left: 0;
-  margin-left: 10;
-  margin-right: 20;
-}
-
-ul.topnav li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-
-
-ul.topnav li a:hover:not(.active) {background-color: green;}
-
-
-
-ul.topnav li.right {float: right;}
-
-img {
-    width: 100%;
-
-  }
-
-h2 {
-  color:blue;
-}
-
-h4 {
-  color: green;
-}
-
-  li a, .dropbtn {
-      display: inline-block;
-      color: black;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-  }
-
-  li a:hover, .dropdown:hover .dropbtn {
-      background-color: green;
-  }
-
-  li.dropdown {
-
-  }
-
-  .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: black;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1;
-  }
-
-  .dropdown-content a {
-      color: black;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-      text-align: left;
-  }
-
-  .dropdown-content a:hover {
-    background-color: #f1f1f1;
-  }
-
-  .dropdown:hover .dropdown-content {
-      display: block;
-  }
-
-@media screen and (max-width: 600px){
-    ul.topnav li.right,
-    ul.topnav li {float: none;}
-}
-
-
-
-* {box-sizing: border-box;}
+    <style>
+    * {box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}
 .mySlides {display: none;}
 img {vertical-align: middle;}
@@ -231,6 +92,9 @@ img {vertical-align: middle;}
   margin: 5px 2px;
 }
 
+h2{
+  color: blue;
+}
 
 .fa-facebook {
   background: #3B5998;
@@ -244,54 +108,38 @@ img {vertical-align: middle;}
   background: #00aff0;
   color: white;
 }
+.button3 {border-radius: 15px;}
+.button4 {background-color: blue;color: white;}
 
 </style>
-
-  <title>
-
-    {% block title %}
-
-    {% endblock %}
-
-  </title>
 
 </head>
 
 <body>
 
-  {% block header %}
+{% block navbar %}
 
-  {% endblock %}
+{% endblock %}
+{% block slideshow %}
 
-  {% block slide %}
+{% endblock %}
 
-  {% endblock %}
+{% block content %}
+{% endblock %}
 
+{% block footer %}
+{% endblock %}
 
-  {% block content %}
-
-  {% endblock %}
-
-
-  {% block footer %}
-
-  {% endblock %}
-
-
-  <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5af665c9227d3d7edc25383e/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
+<script>
+function myFunction() {
+    var x = document.getElementById("demo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
 </script>
-<!--End of Tawk.to Script-->
 
 </body>
-
 </html>

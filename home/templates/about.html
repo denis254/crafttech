@@ -1,58 +1,64 @@
 {% extends "base.html" %}
-
 {% load static %}
 
-{% block title %}
-
-About us | Kenya Web App Developers Team | CraftTechSolution, East Africa
-
+{% block navbar %}
+{% include "navbar.html" %}
 {% endblock %}
 
-{% block header %}
-
-{% include "header.html" %}
-
+{% block slideshow %}
+{% include "slideshow.html" %}
 {% endblock %}
 
 {% block content %}
-
-{% include "slideshow.html" %}
-
-<h2 align = "center">Craft Tech Solution Company Profile</h2>
-
-<div class="w3-row-padding">
+<div class="w3-row-padding" >
+  <h4 align = "center" style="color:blue"> CraftTechSolution</h4>
   <div class="w3-third">
-<p>
-  Craft Tech Solution Ltd provides digital business solution that makes it unique in the industry. With our belief that the
-   internet media should be linked to core marketing practices, we help companies to seamlessly integrate websites to their
-    core business thereby realizing their objectives. Focusing on the three most important business growth aspects: reaching
-     your prospects, customer conversion and customer retention, we work to continuously provide "complete website solution" to
-      our satisfied clients.
-</p>
+<p>Craft Tech Solution Ltd provides digital business solution that makes it unique in the industry.
+ With our belief that the internet media should be linked to core marketing practices,
+  we help companies to seamlessly integrate websites to their core business thereby
+   realizing their objectives.</p>
+  </div>
+
+  <div class="w3-third">
+<p>We have been providing a wide range of web services from Nairobi, Kenya which includes Website design and
+   development, Web and Intranet application, Internet Marketing and many other business consulting solutions.
+    Whether it is Internet security, e-commerce, CRM, or full-scale portal, web-based and database driven
+     systems development, we can help you with your next project and IT outsourcing needs.
+   </p>
+
+  </div>
+
+  <div class="w3-third">
+<p>Craft Tech Solution Ltd partners with all our clients to ensure that our best solutions meets their objectives
+   and goals.Focusing on the three most important business growth aspects:
+    reaching your prospects, customer conversion and customer retention, we work to continuously
+     provide "complete website solution" to our satisfied clients.
+ </p>
+  </div>
 </div>
+<br>
 
-<div class="w3-third">
-<p>
+<div class="w3-row-padding" align = "center">
+  <div class="w3-third">
+    <img style="width:200px; height:200px" src="{% static "images/our-mission.jpg"  %}" alt="My image"  />
+<p>We believe that the future is digital. We also believe that the denial to embrace new technology, whether
+   personal or corporate, postpones progress.</p>
+  </div>
 
-We have been providing a wide range of web services from Nairobi, Kenya which includes Website design and development, Web
- and Intranet application, Internet Marketing and many other business consulting solutions. Whether it is Internet security,
-  e-commerce, CRM, or full-scale portal, web-based and database driven systems development, we can help you with your next project
-   and IT outsourcing needs.
-</p>
+  <div class="w3-third">
+    <img style="width:200px; height:200px" src="{% static "images/download.jpeg" %}" alt="My image"  />
+<p>We help businesses unveil and satisfy demand for digital transformation by providing engineering and consulting
+   services that foster competitiveness and innovation.</p>
+  </div>
+
+  <div class="w3-third">
+    <img style="width:200px; height:200px" src="{% static "images/BSBN7vwv_400x400.png"  %}" alt="My image"  />
+<p>CraftTechSolution helps large, medium-sized companies and startups to design, develop and evolve software that
+   supplies their ad-hoc needs and brings ideas to life.</p>
+  </div>
 </div>
-
-<div class="w3-third">
-<p>
-Craft Tech Solution Ltd partners with all our clients to ensure that our best solutions meets their objectives and goals.
-</p>
-</div>
-</div>
-
-
 {% endblock %}
 
 {% block footer %}
-
-  {% include "contactus.html" %}
-
+{% include "footer.html" %}
 {% endblock %}

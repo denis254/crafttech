@@ -1,33 +1,26 @@
 {% extends "base.html" %}
-
 {% load static %}
 
-{% block title %}
-
-Contact Us | Contact Our Support Center 24/7 | CraftTechSolution, Kenya
-
+{% block navbar %}
+{% include "navbar.html" %}
 {% endblock %}
 
-{% block header %}
-
-{% include "header.html" %}
-
+{% block slideshow %}
+{% include "slideshow.html" %}
 {% endblock %}
 
 {% block content %}
-
-{% include "slideshow.html" %}
-<p>
+<p style="margin:30px">
 Feel free to talk to our online representative at any time by using our Live Chat system on our website or one of
  the below instant messaging programs.
 </p>
-<p>
+<p style="margin:30px">
 Please Feel Free to contact this number while waiting for response. (24/7 Support!) Phone General Inquiries:  +254 702 290 881
 </p>
 <h2 align = "center">Tell Us About Your Project
 </h2>
 
-<p>
+<p style="margin:30px">
 
 If you are planning to start a project and considering a possibility to assign it to our company, please fill out the form
  and we will either send you our proposal by email or contact you by phone. The more detailed the information we get, the better
@@ -48,14 +41,12 @@ If you are planning to start a project and considering a possibility to assign i
  </p>
 {% endfor %}
 
-  <button id = "back" type="submit">Submit </button>
+  <button class="btn button4 button3" type="submit"><h4>Send Your Message</h4></button>
 </form>
 </div>
-
+<br>
 {% endblock %}
 
 {% block footer %}
-
-  {% include "contactus.html" %}
-
+{% include "footer.html" %}
 {% endblock %}
